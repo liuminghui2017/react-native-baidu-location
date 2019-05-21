@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/catalyst_slide_down.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/753d237ee4022a820b890c12863de8e5/res/anim/catalyst_slide_down.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/catalyst_fade_in.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/753d237ee4022a820b890c12863de8e5/res/anim/catalyst_fade_in.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/catalyst_push_up_out.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/753d237ee4022a820b890c12863de8e5/res/anim/catalyst_push_up_out.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/catalyst_slide_up.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/753d237ee4022a820b890c12863de8e5/res/anim/catalyst_slide_up.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/catalyst_push_up_in.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/753d237ee4022a820b890c12863de8e5/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/catalyst_fade_out.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/753d237ee4022a820b890c12863de8e5/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/liuminghui/work/STDAG/projects/SAGFarm/node_modules/react-native-baidu-location/android/build/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/Users/liuminghui/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/53197bfeb5d98ca5ca5731cfee5d104c/res/anim/abc_tooltip_enter.xml"
+    }
+]
