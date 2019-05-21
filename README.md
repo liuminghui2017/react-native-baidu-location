@@ -61,7 +61,7 @@
 ### setup(AK) (ios)
 ios使用时需在根组件加载完毕时调用一次
 ```javascript
-	RNBaiduLocation.setup().then(res => {
+	RNBaiduLocation.setup('百度ak').then(res => {
 		if (res.success) { /*success*/}
 		else {/*failed*/}
 	})
