@@ -95,7 +95,7 @@ public class RNBaiduLocationModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void remove() {
     if (mLocationClient != null && myListener != null) {
-      mLocationClient.unRegisterLocationListener(myListener);
+      // mLocationClient.unRegisterLocationListener(myListener);
     }
   }
 
