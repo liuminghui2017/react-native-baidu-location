@@ -66,7 +66,7 @@ ios使用时需在根组件加载完毕时调用一次
 		else {/*failed*/}
 	})
 ```
-### remove()
+### remove() (ios)
 ```javascript
 	RNBaiduLocation.remove()
 ```
@@ -99,7 +99,7 @@ ios使用时需在根组件加载完毕时调用一次
   }
 
   componentWillUnMount() {
-    RNBaiduLocation.remove()
+    Platform.OS == 'ios' && RNBaiduLocation.remove()
   }
 ```
 
