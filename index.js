@@ -1,7 +1,5 @@
-
 import { NativeModules } from 'react-native';
 
-const { RNBaiduLocation } = NativeModules;
+const { BaiduLocation } = NativeModules;
 
-export default RNBaiduLocation;
-
+export default BaiduLocation;

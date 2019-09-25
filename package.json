@@ -1,40 +1,33 @@
 {
-  "_from": "git+https://github.com/liuminghui2017/react-native-baidu-location.git",
-  "_id": "react-native-baidu-location@1.0.0",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/react-native-baidu-location",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/liuminghui2017/react-native-baidu-location.git",
-    "rawSpec": "https://github.com/liuminghui2017/react-native-baidu-location.git",
-    "saveSpec": "git+https://github.com/liuminghui2017/react-native-baidu-location.git",
-    "fetchSpec": "https://github.com/liuminghui2017/react-native-baidu-location.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/liuminghui2017/react-native-baidu-location.git#637c9993d10ccbbc49e381e9e8faec18ac966bf2",
-  "_spec": "https://github.com/liuminghui2017/react-native-baidu-location.git",
-  "_where": "/Users/liuminghui/work/STDAG/projects/SAGFarm",
-  "author": "",
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "### android端百度定位服务",
-  "keywords": [
-    "react-native"
-  ],
-  "license": "",
-  "main": "index.js",
   "name": "react-native-baidu-location",
-  "peerDependencies": {
-    "react-native": "^0.41.2"
-  },
+  "title": "React Native Baidu Location",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github_account/react-native-baidu-location.git",
+    "baseUrl": "https://github.com/github_account/react-native-baidu-location"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "yourname@email.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.59.10"
+  }
 }
