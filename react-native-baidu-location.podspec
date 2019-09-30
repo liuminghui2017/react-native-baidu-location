@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency "BMKLocationKit"
+  s.dependency "BMKLocationKit", '~>1.8.0'
 	
   # s.dependency "..."
 end

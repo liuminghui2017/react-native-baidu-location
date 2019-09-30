@@ -1,0 +1,21 @@
+//
+//  BackgroundLocationFix.pch
+//  react-native-baidu-location
+//
+//  Created by 刘明辉 on 2019/9/29.
+//
+
+#ifndef BackgroundLocationFix_pch
+#define BackgroundLocationFix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "CLLocationManager+ZHExtension.h"
+
+#endif
+
+
+#endif /* BackgroundLocationFix_pch */
