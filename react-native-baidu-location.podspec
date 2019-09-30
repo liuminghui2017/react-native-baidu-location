@@ -16,11 +16,13 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
   s.source       = { :git => "https://github.com/github_account/react-native-baidu-location.git", :tag => "#{s.version}" }
 
-  s.source_files = "ios/**/*.{h,m,swift}"
+  s.source_files = "ios/**/*.{h,,mm,m,pch,swift}"
   s.requires_arc = true
 
+  s.vendored_frameworks = "frameworks/BMKLocationKit.framework"
+
   s.dependency "React"
-  s.dependency "BMKLocationKit", '~>1.8.0'
+  #s.dependency "BMKLocationKit", '~>1.8.0'
 	
   # s.dependency "..."
 end
