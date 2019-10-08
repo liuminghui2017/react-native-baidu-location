@@ -5,11 +5,7 @@
 `$ npm install gitUrl --save`
 
 ## 集成
-### RN >= 0.60
-	不需执行react-native link操作
 #### IOS
-
-`$ cd ios && pod install` 
 
 ##### 1.引入系统库文件
 	CoreLocation.framework
@@ -29,8 +25,19 @@
 
 不需要后台定位时只配置第一个权限即可
 
-#### 3.环境配置
+##### 3.Info.plist
+	在项目的Info.plist 添加App Transport Security Settings字段, 设置Allow Arbitrary Loads为YES
+
+##### 4.环境配置
 	在TARGETS->Build Settings->Other Linker Flags 中添加-ObjC。
+
+##### 5-1 RN >= 0.60
+`$ cd ios && pod install` 
+##### 5-2 RN <= 0.59
+- 链接
+ `$ react-native link react-native-baidu-location`
+- 在 TARGETS->General->Linked Frameworks and Libraries中添加BMKLocationKit.framework
+- 检查TARGETS->Build Setting->Search Paths->Framework Search Paths设置：$(SRCROOT)/../node_modules/react-native-baidu-location/frameworks
 
 #### Android
 ##### 1.添加AK
@@ -48,10 +55,15 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-	<uses-permission android:name="android.permission.INTERNET" /></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 ##### 3.添加service
 	<service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+
+##### 4-1 RN >= 0.60
+不用做任何操作
+##### 4-2 RN <= 0.59
+`$ react-native link react-native-baidu-location`
 
 ## Usage
 ```javascript
