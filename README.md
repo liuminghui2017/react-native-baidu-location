@@ -68,6 +68,7 @@ import BaiduLocation from 'react-native-baidu-location';
 			}
 		}
 
+		// 单次定位
 		getLocation() {
 			BaiduLocation.getLocation().then(res => {
 				res = {
