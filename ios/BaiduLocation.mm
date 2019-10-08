@@ -102,6 +102,7 @@
 
 RCT_EXPORT_MODULE()
 
+
 // 获取定位
 RCT_REMAP_METHOD(getLocation,
                  resolver:(RCTPromiseResolveBlock)resolve

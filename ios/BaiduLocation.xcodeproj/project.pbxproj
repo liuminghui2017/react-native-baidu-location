@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AB4D90D234C602D00E29B8D /* CLLocationManager+ZHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4D90C234C602D00E29B8D /* CLLocationManager+ZHExtension.m */; };
 		B3E7B58A1CC2AC0600A0062D /* BaiduLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* BaiduLocation.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libBaiduLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBaiduLocation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4D90A234C601600E29B8D /* BackgroundLocationFix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLocationFix.pch; sourceTree = "<group>"; };
+		6AB4D90B234C602100E29B8D /* CLLocationManager+ZHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+ZHExtension.h"; sourceTree = "<group>"; };
+		6AB4D90C234C602D00E29B8D /* CLLocationManager+ZHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+ZHExtension.m"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* BaiduLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocation.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* BaiduLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +54,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				6AB4D90C234C602D00E29B8D /* CLLocationManager+ZHExtension.m */,
+				6AB4D90B234C602100E29B8D /* CLLocationManager+ZHExtension.h */,
+				6AB4D90A234C601600E29B8D /* BackgroundLocationFix.pch */,
 				B3E7B5881CC2AC0600A0062D /* BaiduLocation.h */,
 				B3E7B5891CC2AC0600A0062D /* BaiduLocation.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -95,6 +102,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -113,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* BaiduLocation.m in Sources */,
+				6AB4D90D234C602D00E29B8D /* CLLocationManager+ZHExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
