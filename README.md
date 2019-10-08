@@ -4,8 +4,9 @@
 
 `$ npm install gitUrl --save`
 
-## Link
-
+## 集成
+### RN >= 0.60
+	不需执行react-native link操作
 #### IOS
 
 `$ cd ios && pod install` 
@@ -30,39 +31,54 @@
 
 #### 3.环境配置
 	在TARGETS->Build Settings->Other Linker Flags 中添加-ObjC。
-#### Android
-
-
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-baidu-location` and add `BaiduLocation.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libBaiduLocation.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
 
 #### Android
+##### 1.添加AK
+	在AndroidManifest.xml文件中的Application标签里添加：
+	<meta-data
+		android:name="com.baidu.lbsapi.API_KEY"
+		android:value="AK" >
+	</meta-data>
 
-1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import com.reactlibrary.BaiduLocationPackage;` to the imports at the top of the file
-  - Add `new BaiduLocationPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-baidu-location'
-  	project(':react-native-baidu-location').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-baidu-location/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-baidu-location')
-  	```
+##### 2.添加权限
+	<!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" /></uses-permission>
 
+##### 3.添加service
+	<service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
 
 ## Usage
 ```javascript
 import BaiduLocation from 'react-native-baidu-location';
 
-// TODO: What to do with the module?
+	class App extends Component {
+		componentDidMounted() {
+			if (platform === 'ios') {
+				BaiduLocation.setup('AK').then(res => {
+					if (res.success) {
+						// success
+					}
+				})
+			}
+		}
+
+		getLocation() {
+			BaiduLocation.getLocation().then(res => {
+				res = {
+					code, // 200成功
+					latitude, // gcj
+					longitude, // gcj
+					addr, // 地址
+					msg, // 获取定位失败错误信息
+				}
+			})
+		}
+	}
 BaiduLocation;
 ```
