@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.rickl.reactlibrary;
 
 import android.util.Log;
 import android.widget.Toast;

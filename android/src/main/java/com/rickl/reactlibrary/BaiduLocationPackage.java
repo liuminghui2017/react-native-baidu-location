@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.rickl.reactlibrary;
 
 import java.util.Arrays;
 import java.util.Collections;
