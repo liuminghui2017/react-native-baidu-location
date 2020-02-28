@@ -8,6 +8,8 @@
 }
     @property(nonatomic, strong) BMKLocationManager *locationManager;
     @property(nonatomic, copy) BMKLocatingCompletionBlock completionBlock;
+    @property bool isLocationAuthed;
+    @property (nonatomic, strong)CLLocationManager *manager;
 @end
 
 

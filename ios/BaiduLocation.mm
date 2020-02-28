@@ -13,7 +13,12 @@
     self->setupResolver = resolve;
     [[BMKLocationAuth sharedInstance] checkPermisionWithKey:AK authDelegate:self];
     [self initLocationManager];
+    [self initLocationAuthStatus];
     [self initBlock];
+    self.manager = [[CLLocationManager alloc]init];
+    if (!_isLocationAuthed) {
+     [self.manager requestWhenInUseAuthorization];
+    }
 }
 
 // 初始化LocationManager
@@ -28,6 +33,10 @@
     _locationManager.allowsBackgroundLocationUpdates = YES;
     _locationManager.locationTimeout = 10;
     _locationManager.reGeocodeTimeout = 10;
+}
+
+-(void) initLocationAuthStatus {
+    _isLocationAuthed = [self getUserLocationAuth];
 }
 
 // 定位结果回调
@@ -82,6 +91,12 @@
 
 // 发起定位
 -(void)getLocation: (RCTPromiseResolveBlock)resolve {
+    if (!_isLocationAuthed) {
+        _isLocationAuthed = [self getUserLocationAuth];
+        if (!_isLocationAuthed) {
+            [self.manager requestWhenInUseAuthorization];
+        }
+    }
     self->locationResolver = resolve;
     [_locationManager requestLocationWithReGeocode:YES withNetworkState:YES completionBlock:self.completionBlock];
 }
@@ -89,6 +104,28 @@
 -(void) remove{
     [_locationManager stopUpdatingLocation];
     _locationManager.delegate = nil;
+}
+
+- (BOOL)getUserLocationAuth {
+    BOOL result = NO;
+    switch ([CLLocationManager authorizationStatus]) {
+        case kCLAuthorizationStatusNotDetermined:
+            break;
+        case kCLAuthorizationStatusRestricted:
+            break;
+        case kCLAuthorizationStatusDenied:
+            break;
+        case kCLAuthorizationStatusAuthorizedAlways:
+            result = YES;
+            break;
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            result = YES;
+            break;
+            
+        default:
+            break;
+    }
+    return result;
 }
 @end
 
